@@ -34,8 +34,8 @@ export default function Home() {
                 </div>
 
                 <div className='row about d-flex justify-content-around align-items-center'>
-                    <div className='col-5 mobile-about-img-div'>
-                        <img className='about-img' alt='Murders at Maniac Manor The Musical Logo' src={AboutPhoto} />
+                    <div className='mobile-about-img-div'>
+                        <img className='about-img' alt='Jordan Brown, Matt Day, Josh Brown at IndyFringe 2023' src={AboutPhoto} />
                     </div>
                     <div className='col-4 about-info text-center'>
                         <h2 className='text-white'>About Player 2 Productions</h2>

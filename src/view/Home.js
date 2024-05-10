@@ -1,13 +1,22 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import Header from '../components/images/P2PBanner.png'
 import ShowLogo from '../components/images/ManiacManorLogo.png'
 import Logo from '../components/images/P2PLogo.png'
 import Jordan from '../components/images/Jordan.jpg'
 import Josh from '../components/images/Josh.jpg'
 import Matt from '../components/images/Matt.webp'
+import SMIDLogo from '../components/images/SMID-Logo.webp'
+import MMAMLogo from '../components/images/MMAM-IndyFringe-Square-01-2.webp'
 import AboutPhoto from '../components/images/P2PAbout.JPG'
 
 export default function Home() {
+
+    const scrollToTop = () => {
+        window.scrollTo({ top: 0, behavior: "smooth" })
+    }
+
+
     return (
         <div className='fullpage'>
             <div className='hero-image heritage'>
@@ -17,6 +26,9 @@ export default function Home() {
 
 
             <div className='container'>
+                <div>
+                    <a></a>
+                </div>
                 <div className='row featured d-flex justify-content-around align-items-center'>
                     <div className='col-5 show-img-div'>
                         <img className='show-img' alt='Murders at Maniac Manor The Musical Logo' src={ShowLogo} />
@@ -86,14 +98,15 @@ export default function Home() {
                             </div>
                         </div>
                     </div>
-                    <div className='row text-center my-5 m-auto'>
-                        <h2>Follow Player 2 Productions!</h2>
-                        <div className='d-flex justify-content-center'>
-                            <a href='https://www.instagram.com/player2productionsindy/' target='_blank'><i class="fa-brands fa-instagram mx-5"></i></a>
-                            <a href='https://www.facebook.com/Player2ProductionsIndy/' target='_blank'><i class="fa-brands fa-square-facebook mx-5"></i></a>
+
+                </div>
+
+                    <div class="works-box">
+                        <div class="works-IMGs">
+                            <Link onClick={scrollToTop} to={'/SuperMarioIsDead'}><img className='works-IMG SMID-works-IMG' alt='Super Mario is Dead Logo' src={SMIDLogo} /></Link>
+                            <Link onClick={scrollToTop} to={'/MakeMeAMatch'}><img className='works-IMG' alt='Make Me A Match Logo' src={MMAMLogo} /></Link>
                         </div>
                     </div>
-                </div>
             </div>
         </div>
     )

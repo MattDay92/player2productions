@@ -15,7 +15,9 @@ body {
   background: black;
 }
 
-h1, h2, h3{
+h1,
+h2,
+h3 {
   font-family: "Bebas Neue";
 }
 
@@ -27,21 +29,21 @@ a {
   min-height: 100vh;
 }
 
-.nav-logo{
+.nav-logo {
   height: 8vh;
 }
 
-.navbar{
+.navbar {
   padding-left: 5vw;
   padding-right: 5vw;
   height: 10vh;
 }
 
-.btn-danger{
-  background: rgb(175,20,52);
+.btn-danger {
+  background: rgb(175, 20, 52);
 }
 
-.btn-danger:hover{
+.btn-danger:hover {
   background: rgb(147, 14, 40);
 }
 
@@ -56,97 +58,103 @@ a {
   margin-bottom: 5vh;
 }
 
-.home-logo{
+.home-logo {
   width: 30vw;
   height: 100%;
-  object-fit:contain;
+  object-fit: contain;
 }
 
-.home-banner{
+.home-banner {
   width: 60vw;
   height: 100%;
-  object-fit:contain;
+  object-fit: contain;
 }
 
 @media (max-width: 768px) {
-  .hero-image, .featured, .about{
+
+  .hero-image,
+  .featured,
+  .about {
     min-height: 100vh;
     flex-direction: column;
     justify-content: center;
     margin-top: -5vh;
   }
 
-  .home-logo{
+  .home-logo {
     width: 100%;
     height: 30%;
-    object-fit:contain;
+    object-fit: contain;
   }
 
-  .about-img{
+  .about-img {
     width: 60vw !important;
     margin: auto;
   }
 
-  .about-img-div{
+  .about-img-div {
     display: none;
   }
 
-  .show-img-div{
+  .show-img-div {
     width: 50vw !important;
   }
 
-  .show-logo{
+  .show-logo {
     height: 100%;
   }
 
-  .home-banner{
+  .home-banner {
     width: 100vw;
     height: 30%;
-    object-fit:contain;
-    margin-bottom: 10vh;
-  }
-  
-  .featured-info, .about-info{
-    width: 80vw;
-    height: 30%;
-    object-fit:contain;
+    object-fit: contain;
     margin-bottom: 10vh;
   }
 
-  .mobile-about-img-div{
+  .featured-info,
+  .about-info {
+    width: 80vw;
+    height: 30%;
+    object-fit: contain;
+    margin-bottom: 10vh;
+  }
+
+  .mobile-about-img-div {
     display: flex !important;
     width: 100vw;
   }
 
-  .bio{
+  .bio {
     width: 80vw;
     margin-bottom: 5vh;
   }
 
-  .bioIMG{
+  .bioIMG {
     width: 60% !important;
   }
 }
 
 @media (max-width: 425px) {
-  .show-img-div{
+  .show-img-div {
     width: 80vw !important;
   }
 
-  .about-img{
+  .about-img {
     width: 80vw !important;
   }
 }
 
-.featured, .about{
+.featured,
+.about {
   margin-bottom: 10vh;
 }
 
-.show-img-div, .about-img{
+.show-img-div,
+.about-img {
   width: 30vw;
 }
 
-.mobile-about-img-div{
+.mobile-about-img-div {
   display: none;
 }
 
@@ -156,14 +164,61 @@ a {
   margin-bottom: 2vh;
 }
 
-.bioIMG{
+.bioIMG {
   width: 100%;
   border-radius: 50%;
 }
 
-.bio-text{
+.bio-text {
   height: 40vh;
   overflow-y: scroll;
+}
+
+
+.works-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.works-IMGs {
+  display: flex;
+  justify-content: space-around;
+  transform: translateY(-5vh);
+  width: 80vw;
+  margin: auto;
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+  flex-wrap: wrap;
+}
+
+.works-IMG {
+  width: 20vw;
+  border-radius: 50%;
+}
+
+.SMID-works-IMG{
+  border: 2px solid white;
+}
+
+.works-IMG:hover {
+  transform: scale(1.1);
+  transition: transform 0.5s;
+}
+
+@media (max-width: 450px) {
+  .works-IMGs {
+      transform: translateY(0vh);
+  }
+
+  .works-IMG {
+      width: 40vw;
+      margin: 5vw;
+  }
+
+  .works-section-header {
+      display: none;
+  }
 }
 
 
@@ -174,4 +229,413 @@ a {
 
 .fa-brands:hover {
   color: rgb(147, 14, 40)
+}
+
+
+/* ---------------------- SHOW PAGES --------------------------*/
+
+.return-home-btn{
+  position: absolute;
+  margin-left: 5vw;
+  margin-top: 5vh;
+}
+
+.show-info {
+  min-height: 30vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80vw;
+  margin: auto;
+}
+
+.show-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 40vw;
+  text-align: center;
+  margin-top: 10vh;
+  font-size: 1.2vw;
+}
+
+.show-img-div {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  align-items: center;
+  width: 40vw;
+}
+
+.show-img-1,
+.show-img-2,
+.show-img-3 {
+  position: absolute;
+  width: 80%;
+  top: -10vh;
+}
+
+.show-img-1 {
+  animation: show-1 15s infinite;
+}
+
+@keyframes show-1 {
+  0% {
+    opacity: 0;
+  }
+
+  5% {
+    opacity: 1;
+  }
+
+  35% {
+    opacity: 1;
+  }
+
+  40% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.show-img-2 {
+  animation: show-2 15s infinite;
+}
+
+@keyframes show-2 {
+  0% {
+    opacity: 0;
+  }
+
+  35% {
+    opacity: 0;
+  }
+
+  40% {
+    opacity: 1;
+  }
+
+  65% {
+    opacity: 1;
+  }
+
+  70% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.show-img-3 {
+  animation: show-3 15s infinite;
+}
+
+@keyframes show-3 {
+  0% {
+    opacity: 0;
+  }
+
+  65% {
+    opacity: 0;
+  }
+
+  70% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.show-media {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 80vw;
+  min-height: 40vh;
+  margin: auto;
+  margin-top: 15vh;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+}
+
+.show-video {
+  width: 30vw !important;
+}
+
+.banner-img-div {
+  width: 35vw;
+}
+
+.banner-img {
+  width: 100% !important;
+}
+
+
+
+@media (max-width: 450px) {
+  #banner {
+    flex-wrap: wrap-reverse;
+  }
+
+  .banner-name-div {
+    width: 80vw;
+  }
+
+  .banner-img-div {
+    width: 80vw;
+    transform: translateY(30%);
+  }
+
+  .show-info {
+    display: block;
+  }
+
+  .show-text {
+    width: 80vw;
+    font-size: 4vw;
+  }
+
+  .show-img-1,
+  .show-img-2,
+  .show-img-3 {
+    top: 0;
+    margin: auto;
+    padding-top: 5vh;
+    width: 80%;
+  }
+
+  .show-img-div {
+    width: 80vw;
+    margin: auto;
+  }
+
+  .show-media {
+    margin-top: 25vh;
+  }
+
+  .show-video {
+    height: 250px;
+    width: 60vw !important;
+    margin: auto;
+    margin-top: 5vh;
+  }
+}
+
+/* -------------------------------MMAM------------------------------ */
+
+.MMAM-main {
+  min-height: 100vh;
+  color: white;
+  background: linear-gradient(120deg, rgb(193, 207, 100) 30%, rgb(103, 193, 217) 50%, rgb(205, 118, 168) 80%, rgb(205, 118, 168) 100%);
+}
+
+.mmam-banner-div {
+  padding-top: 15vh;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  overflow-x: hidden;
+  margin-bottom: 5vh;
+}
+
+.mmam-banner-img {
+  width: 60vw;
+}
+
+.mmam-mobile-banner-img {
+  display: none;
+}
+
+@media (max-width: 450px) {
+  .mmam-banner-img{
+      width: 80vw;
+  }
+}
+
+
+
+/* ------------------------------SMID------------------------------- */
+
+.smid-main {
+  min-height: 100vh;
+  background: black;
+  color: white;
+}
+
+.SMID-banner-img {
+  margin-top: 15vh;
+}
+
+.SMID-mobile-banner-img {
+  display: none;
+}
+
+.SMID-img-1,
+.SMID-img-2,
+.SMID-img-3,
+.SMID-img-4 {
+  position: absolute;
+  top: -10vh;
+  max-height: 35vh;
+}
+
+.SMID-img-1 {
+  animation: SMID-1 25s infinite;
+}
+
+@keyframes SMID-1 {
+  0% {
+    opacity: 0;
+  }
+
+  5% {
+    opacity: 1;
+  }
+
+  20% {
+    opacity: 1;
+  }
+
+  25% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.SMID-img-2 {
+  animation: SMID-2 25s infinite;
+}
+
+@keyframes SMID-2 {
+  0% {
+    opacity: 0;
+  }
+
+  20% {
+    opacity: 0;
+  }
+
+  25% {
+    opacity: 1;
+  }
+
+  40% {
+    opacity: 1;
+  }
+
+  45% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.SMID-img-3 {
+  animation: SMID-3 25s infinite;
+}
+
+@keyframes SMID-3 {
+  0% {
+    opacity: 0;
+  }
+
+  40% {
+    opacity: 0;
+  }
+
+  45% {
+    opacity: 1;
+  }
+
+  65% {
+    opacity: 1;
+  }
+
+  70% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.SMID-img-4 {
+  animation: SMID-4 25s infinite;
+}
+
+@keyframes SMID-4 {
+  0% {
+    opacity: 0;
+  }
+
+  65% {
+    opacity: 0;
+  }
+
+  70% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 450px) {
+  .SMID-banner-div {
+    max-height: 45vh;
+    display: flex;
+    justify-content: center;
+    padding-top: 10vh;
+  }
+
+  .SMID-banner-img {
+    display: none;
+  }
+
+  .SMID-mobile-banner-img {
+    display: block;
+    max-height: 100%;
+    object-fit: contain;
+  }
+
+  .SMID-img-1,
+  .SMID-img-2,
+  .SMID-img-3,
+  .SMID-img-4 {
+    top: 0;
+    margin: auto;
+    padding-top: 5vh;
+    width: 60%;
+  }
+
+  .SMID-show-media {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 35vh;
+  }
+
+  .SMID-show-video {
+    width: 80vw;
+    margin: auto;
+  }
+
+  .SMID-spotify-player {
+    width: 80vw;
+    padding-top: 10vh;
+    margin: auto;
+  }
 }

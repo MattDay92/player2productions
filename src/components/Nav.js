@@ -6,7 +6,7 @@ export default function Nav() {
         <div>
             <nav class="navbar bg-light">
                 <img className='nav-logo' src={Logo} />
-                <a href='https://www.indyfringe.org' className='btn btn-danger disabled' >Buy Tickets</a>
+                <a href='https://forms.gle/Q1pzrPiepGP4S4HeA' target='_blank' className='btn btn-danger disabled' >Tickets</a>
             </nav>
         </div>
     )

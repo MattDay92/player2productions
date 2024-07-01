@@ -35,12 +35,12 @@ export default function Home() {
                     </div>
                     <div className='col-4 featured-info text-center'>
                         <h2 className='text-white'>IndyFringe 2024</h2>
-                        <h2 className='text-white'>August 15 - 25</h2>
+                        <h2 className='text-white'>August 15 - 18</h2>
                         <p>Player 2 Productions is proud to present the world premiere of <em>Murders at Maniac Manor The Musical</em>
                             at the 2024 IndyFringe Festival!  With music and lyrics by Matt Day and book and lyrics by Josh Brown, MaMM will
-                            be performed <strong>three</strong> times over the course of the festival.
-
+                            be performed <strong>four</strong> times over the course of the festival.
                         </p>
+                        <h3>Tickets Available Now!</h3>
 
                     </div>
                 </div>

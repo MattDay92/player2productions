@@ -33,10 +33,10 @@ export default function SMID() {
                         And did we mention that they sing?</p>
                 </div>
                 <div className="show-img-div">
-                    <img className="SMID-img-1" alt="Super Mario is Dead Image" src={SMID1} />
-                    <img className="SMID-img-2" alt="Super Mario is Dead Image" src={SMID2} />
-                    <img className="SMID-img-3" alt="Super Mario is Dead Image" src={SMID3} />
-                    <img className="SMID-img-4" alt="Super Mario is Dead Image" src={SMID4} />
+                    <img className="SMID-img-1" alt="Super Mario is Dead Image 1" src={SMID1} />
+                    <img className="SMID-img-2" alt="Super Mario is Dead Image 2" src={SMID2} />
+                    <img className="SMID-img-3" alt="Super Mario is Dead Image 3" src={SMID3} />
+                    <img className="SMID-img-4" alt="Super Mario is Dead Image 4" src={SMID4} />
                 </div>
             </div>
             <div className="show-media SMID-show-media">

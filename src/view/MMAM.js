@@ -27,9 +27,9 @@ export default function MMAM() {
                         coworker, Lexi, they work together to bring him down once and for all. </p>
                 </div>
                 <div className="show-img-div">
-                    <img className="show-img-1" alt="Make Me A Match Image" src={MMAM1} />
-                    <img className="show-img-2" alt="Make Me A Match Image" src={MMAM2} />
-                    <img className="show-img-3" alt="Make Me A Match Image" src={MMAM3} />
+                    <img className="show-img-1" alt="Make Me A Match Image 1" src={MMAM1} />
+                    <img className="show-img-2" alt="Make Me A Match Image 2" src={MMAM2} />
+                    <img className="show-img-3" alt="Make Me A Match Image 3" src={MMAM3} />
                 </div>
             </div>
             <div className="show-media">

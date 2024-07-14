@@ -65,7 +65,7 @@ export default function Home() {
                     <h2>Meet the Team</h2>
                     <div className='director-bios row col-10 d-flex justify-content-around mx-auto my-3'>
                         <div className='col-3 bio'>
-                            <div className='text-center my-3'><img src={Matt} className='bioIMG' alt='Kelly Day - Director' /></div>
+                            <div className='text-center my-3'><img src={Matt} className='bioIMG' alt='Matt Day' /></div>
                             <div className='text-center bio-text'>
                                 <h3>Matt Day</h3>
                                 <p>Matt Day is a musical theatre composer/lyricist and professional guitarist currently based out of Indianapolis, IN.
@@ -78,7 +78,7 @@ export default function Home() {
                             </div>
                         </div>
                         <div className='col-3 bio'>
-                            <div className='text-center my-3'><img src={Josh} className='bioIMG' alt='Johnnie Hughes - Director' /></div>
+                            <div className='text-center my-3'><img src={Josh} className='bioIMG' alt='Josh Brown' /></div>
                             <div className='text-center bio-text'>
                                 <h3>Josh Brown</h3>
                                 <p>Josh Brown is a writer, director, and occasional actor for Player 2 Productions. In 2023, Josh wrote and starred as Toad in the best-selling
@@ -88,7 +88,7 @@ export default function Home() {
                             </div>
                         </div>
                         <div className='col-3 bio'>
-                            <div className='text-center my-3'><img src={Jordan} className='bioIMG' alt='Johnnie Hughes - Director' /></div>
+                            <div className='text-center my-3'><img src={Jordan} className='bioIMG' alt='Jordan Brown' /></div>
                             <div className='text-center bio-text'>
                                 <h3>Jordan Brown</h3>
                                 <p>Jordan Brown is a writer, director, and propmaster for Player 2 Productions.  In 2023, Jordan co-wrote, directed, and starred in Super Mario is Dead and in 2019, Jordan co-wrote the
@@ -103,8 +103,8 @@ export default function Home() {
 
                     <div class="works-box">
                         <div class="works-IMGs">
-                            <Link onClick={scrollToTop} to={'/SuperMarioIsDead'}><img className='works-IMG SMID-works-IMG' alt='Super Mario is Dead Logo' src={SMIDLogo} /></Link>
-                            <Link onClick={scrollToTop} to={'/MakeMeAMatch'}><img className='works-IMG' alt='Make Me A Match Logo' src={MMAMLogo} /></Link>
+                            <Link onClick={scrollToTop} to={'/SuperMarioIsDead'} alt='Super Mario is Dead'><img className='works-IMG SMID-works-IMG' alt='Super Mario is Dead Logo' src={SMIDLogo} /></Link>
+                            <Link onClick={scrollToTop} to={'/MakeMeAMatch'} alt='Make Me A Match'><img className='works-IMG' alt='Make Me A Match Logo' src={MMAMLogo} /></Link>
                         </div>
                     </div>
             </div>

@@ -8,6 +8,7 @@ import Josh from '../components/images/Josh.jpg'
 import Matt from '../components/images/Matt.webp'
 import SMIDLogo from '../components/images/SMID-Logo.webp'
 import MMAMLogo from '../components/images/MMAM-IndyFringe-Square-01-2.webp'
+import ManiacManorLogo from '../components/images/ManiacManorLogo.png'
 import AboutPhoto from '../components/images/P2PAbout.JPG'
 
 export default function Home() {
@@ -26,7 +27,7 @@ export default function Home() {
 
 
             <div className='container'>
-                <div>
+                {/* <div>
                     <a></a>
                 </div>
                 <div className='row featured d-flex justify-content-around align-items-center'>
@@ -43,7 +44,7 @@ export default function Home() {
                         <h3>Tickets Available Now!</h3>
 
                     </div>
-                </div>
+                </div> */}
 
                 <div className='row about d-flex justify-content-around align-items-center'>
                     <div className='mobile-about-img-div'>
@@ -103,8 +104,10 @@ export default function Home() {
 
                     <div class="works-box">
                         <div class="works-IMGs">
-                            <Link onClick={scrollToTop} to={'/SuperMarioIsDead'} alt='Super Mario is Dead'><img className='works-IMG SMID-works-IMG' alt='Super Mario is Dead Logo' src={SMIDLogo} /></Link>
+                            <Link onClick={scrollToTop} to={'/SuperMarioIsDead'} alt='Super Mario is Dead'><img className='works-IMG' alt='Super Mario is Dead Logo' src={SMIDLogo} /></Link>
                             <Link onClick={scrollToTop} to={'/MakeMeAMatch'} alt='Make Me A Match'><img className='works-IMG' alt='Make Me A Match Logo' src={MMAMLogo} /></Link>
+                            <Link onClick={scrollToTop} to={'/ManiacManor'} alt='Make Me A Match'><img className='works-IMG' alt='Murders at Maniac Manor Logo' src={ManiacManorLogo} /></Link>
+
                         </div>
                     </div>
             </div>

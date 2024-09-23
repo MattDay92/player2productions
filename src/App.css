@@ -195,9 +195,6 @@ a {
 .works-IMG {
   width: 20vw;
   border-radius: 50%;
-}
-
-.SMID-works-IMG{
   border: 2px solid white;
 }
 
@@ -404,7 +401,8 @@ a {
 
   .show-img-1,
   .show-img-2,
-  .show-img-3 {
+  .show-img-3,
+  .show-img-4 {
     top: 0;
     margin: auto;
     padding-top: 5vh;
@@ -459,6 +457,36 @@ a {
   }
 }
 
+/* --------------------------MANIAC MANOR-------------------------- */
+
+.maniacmanor-main {
+  min-height: 100vh;
+  color: white;
+  background: black;
+}
+
+.maniacmanor-banner-div {
+  padding-top: 0vh;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  overflow-x: hidden;
+  margin-bottom: 0vh;
+}
+
+.maniacmanor-banner-img {
+  width: 30vw;
+}
+
+.mmam-mobile-banner-img {
+  display: none;
+}
+
+@media (max-width: 450px) {
+  .maniacmanor-banner-img{
+      width: 80vw;
+  }
+}
 
 
 /* ------------------------------SMID------------------------------- */

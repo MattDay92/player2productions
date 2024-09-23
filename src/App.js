@@ -6,6 +6,7 @@ import Nav from './components/Nav';
 import Footer from './components/Footer';
 import SMID from './view/SMID';
 import MMAM from './view/MMAM';
+import ManiacManor from './view/ManiacManor';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Route exact path={'/'} element={<Home />} />
           <Route exact path={'/SuperMarioisDead'} element={<SMID />} />
           <Route exact path={'/MakeMeAMatch'} element={<MMAM />} />
+          <Route exact path={'/ManiacManor'} element={<ManiacManor />} />
         </Routes>
         <Footer />
       </BrowserRouter>
